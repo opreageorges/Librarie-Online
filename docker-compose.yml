@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+    mysql:
+        build: ./MySQLdb
+        ports:
+            - "3306:3306"
+    flask-be:
+        build: ./Back-End
+        depends_on: [mysql]
+        ports:
+            - "5000:5000"
+    frontend:
+        build: ./Frontend
+        depends_on: [flask-be]
+        ports:
+            - "80:3000"

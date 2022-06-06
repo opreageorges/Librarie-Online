@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  align-self: flex-end;
+  padding-right: 30px;
+  background-color: #FFFFFF;
+  height: 50px;
+
+  .child{
+    text-align: center;
+    font-size: large;
+    margin-top: 2px;
+    font-style: oblique;
+  }
+
+  .button{
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 30px;
+    background-color: #fbeee0 !important;
+    border: 2px solid #422800;
+    border-radius: 20px;
+    box-shadow: #422800 2px 2px 6px 1px;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 10px;
+    padding: 0 15px 0 ;
+    line-height: 15px ;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .button:hover {
+    background-color: #fff;
+  }
+
+  .button:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+
+  .language{
+    margin-top: -4px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+
+    .lg {
+      margin-top: 10px!important;
+      margin-left: 17px;
+    }
+  }
+
+  .auth {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}

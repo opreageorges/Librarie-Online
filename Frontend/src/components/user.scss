@@ -1,0 +1,32 @@
+.user {
+  border: 1px solid black;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+
+  .userHelper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .buttons {
+      display: flex;
+      flex-direction: row;
+
+      .button {
+        width: 100px;
+        height: 40px;
+        margin: 20px;
+      }
+    }
+  }
+
+  .userHelper > p {
+    display: flex;
+    flex-direction: row;
+  }
+
+  margin-bottom: 10px;
+
+}
+
